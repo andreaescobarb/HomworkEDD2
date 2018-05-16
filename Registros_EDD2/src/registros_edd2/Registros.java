@@ -44,8 +44,8 @@ public class Registros extends javax.swing.JFrame {
         rb_Femenino = new javax.swing.JRadioButton();
         rb_Masculino = new javax.swing.JRadioButton();
         txt_race = new javax.swing.JTextField();
-        btn_insertarRegistros = new javax.swing.JButton();
-        btn_borrarRegistros = new javax.swing.JButton();
+        btn_insertar = new javax.swing.JButton();
+        btn_eliminar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -121,14 +121,14 @@ public class Registros extends javax.swing.JFrame {
             }
         });
 
-        btn_insertarRegistros.setText("Insertar");
-        btn_insertarRegistros.addActionListener(new java.awt.event.ActionListener() {
+        btn_insertar.setText("Insertar");
+        btn_insertar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_insertarRegistrosActionPerformed(evt);
+                btn_insertarActionPerformed(evt);
             }
         });
 
-        btn_borrarRegistros.setText("Eliminar");
+        btn_eliminar.setText("Eliminar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -160,14 +160,13 @@ public class Registros extends javax.swing.JFrame {
                             .addComponent(txt_Address, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txt_ID, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txt_Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txt_Apellido, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(68, 68, 68)
-                .addComponent(btn_insertarRegistros, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 98, Short.MAX_VALUE)
-                .addComponent(btn_borrarRegistros, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(57, 57, 57))
+                            .addComponent(txt_Apellido, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(58, 58, 58)
+                        .addComponent(btn_insertar, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(57, 57, 57)
+                        .addComponent(btn_eliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(120, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -203,11 +202,11 @@ public class Registros extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txt_race, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addGap(44, 44, 44)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_insertarRegistros)
-                    .addComponent(btn_borrarRegistros))
-                .addGap(43, 43, 43))
+                    .addComponent(btn_insertar)
+                    .addComponent(btn_eliminar))
+                .addContainerGap(45, Short.MAX_VALUE))
         );
 
         pack();
@@ -237,9 +236,9 @@ public class Registros extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_raceActionPerformed
 
-    private void btn_insertarRegistrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_insertarRegistrosActionPerformed
+    private void btn_insertarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_insertarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_insertarRegistrosActionPerformed
+    }//GEN-LAST:event_btn_insertarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -277,8 +276,8 @@ public class Registros extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_borrarRegistros;
-    private javax.swing.JButton btn_insertarRegistros;
+    private javax.swing.JButton btn_eliminar;
+    private javax.swing.JButton btn_insertar;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

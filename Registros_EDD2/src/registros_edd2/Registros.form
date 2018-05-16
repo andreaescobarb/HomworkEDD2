@@ -59,15 +59,14 @@
                           <Component id="txt_Apellido" min="-2" pref="197" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                      <Component id="btn_insertar" min="-2" pref="171" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                      <Component id="btn_eliminar" min="-2" pref="173" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
-              <Component id="btn_insertarRegistros" min="-2" pref="178" max="-2" attributes="0"/>
-              <EmptySpace pref="98" max="32767" attributes="0"/>
-              <Component id="btn_borrarRegistros" min="-2" pref="178" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+              <EmptySpace pref="120" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -112,12 +111,12 @@
                   <Component id="jLabel8" alignment="3" min="-2" pref="15" max="-2" attributes="0"/>
                   <Component id="txt_race" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="46" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btn_insertarRegistros" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btn_borrarRegistros" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btn_insertar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btn_eliminar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+              <EmptySpace pref="45" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -240,15 +239,15 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_raceActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn_insertarRegistros">
+    <Component class="javax.swing.JButton" name="btn_insertar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Insertar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_insertarRegistrosActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_insertarActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btn_borrarRegistros">
+    <Component class="javax.swing.JButton" name="btn_eliminar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Eliminar"/>
       </Properties>
